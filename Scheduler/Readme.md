@@ -11,3 +11,29 @@ Sum(similarities of all pairs of papers in a session) + C.Sum(distances of all p
 In our example, the goodness will be computed as<br />
 s(1,2) + s(1,3) + s(1,4) + s(2,3) + s(2,4) + s(3,4) + s(5,6) + s(5,7) + s(5,8) + s(6,7) + s(6,8) + s(7,8) + .. + C {d(1,5) + d(1,6) + ... d(1,11) + d(1,12) + d(2,5) ... + d(2,12) + ..... + d(8,12) + d(13,17)+...}
 The constant C trades off the importance of semantic coherence of one session versus reducing conflict across parallel sessions. **Our goal is to find a schedule with the maximum goodness.**
+# Input:
+The first line has total processing time available in minutes. The second line has k: the number of papers per session The third line has p: the number of parallel sessions
+The fourth line has t: the number of time slots.
+(This implies that number of papers is pkt)
+The fifth line has C: the tradeoff parameter
+Starting sixth line we have space separated list of distances between a paper and all others. Note that d(x,y) = d(y,x). Also, all d(x,x) = 0.
+
+Here is a sample input 
+5 <br />
+2 <br />
+2 <br />
+1 <br />
+1 <br />
+0 0.4 0.8 1 <br />
+0.4 0 0.6 0.7 <br />
+0.8 0.6 0 0.3 <br />
+1 0.7 0.3 0<br />
+
+# Output:
+Your algorithm should return the max-goodness schedule found in the desired time limit.
+The output format is: space separated list of paper ids, where a session is separated by bars. And all papers in a time slot in a different line.
+For this problem above the optimal solution is p1 and p2 in one session; and p3-p4 in other. It will be represented as
+0 1 |2 3
+Notice that there are other equivalent ways to represent this same solution. Example:
+1 0 | 2 3 or 3 2 | 0 1 or 2 3 | 1 0 (etc). All of these are equally valid
+Verify that for this problem the total goodness is 4.4.
