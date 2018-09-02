@@ -4,11 +4,10 @@ The goal of this assignment is to take a complex new problem and formulate and s
 # Scenario: Optimization of Conference Schedule.
 A conference has n papers accepted. Our job is to organize them in a best possible schedule. The schedule has p parallel sessions at a given time. Each session has k papers. And there are a total of t time slots. We can assume that n = t.p.k. For example, in Figure below t=2 ,p=3 and k=4.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+|           |         |             |
+| :-----------: |:-------------:| :----------------:|
+| Papers 1,2,3,4| Papers 5,6,7,8|Papers 9,10,11,12 |
+| Papers 13,14,15,16| Papers 17,18,19,20| Papers 21,22,23,24|
 
 We first define the characteristics of a good schedule. For any good schedule most people should feel no conflict about which session to attend. That is, (1) all papers in one session should be related to a single theme. And (2) all papers in parallel sessions should be as far away as possible to avoid conflict. To operationalize this intuition let us assume we are given a function representing the distance between two papers: d(p1,p2), such that d is between 0 and 1. We can similarly define a similarity between two papers s(p1,p2) = 1-d(p1,p2).<br />
 
