@@ -17,7 +17,7 @@ If you get 5 markers in a row, you can remove them by clicking on one of the end
 Click [here](http://www.gipf.com/yinsh/rules/rules.html) for rules of the game.
 
 ## Performance Equivalence Classes
-To rank your performance we will first divide each game into a set of equivalence classes:
+To rank your performance we will first divide each game into a set of equivalence classes:<br />
 Win > Stalemate win > Draw > Stalemate Loss > Loss
 ### Wins / Losses
 You remove L (usually 3) rings before the other player does. The other player loses. For winning, 3-0 is better than 3-1 which is better than 3-2. The opposite is for losing.
