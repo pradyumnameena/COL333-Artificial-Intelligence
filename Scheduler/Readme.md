@@ -8,7 +8,6 @@ We first define the characteristics of a good schedule. For any good schedule mo
 
 Now we can define the goodness of a schedule as follows
 Sum(similarities of all pairs of papers in a session) + C.Sum(distances of all pairs of papers in parallel sessions).
-In our example, the goodness will be computed as
-s(1,2) + s(1,3) + s(1,4) + s(2,3) + s(2,4) + s(3,4) + s(5,6) +s(5,7)+s(5,8)+s(6,7)+s(6,8)+s(7,8) + .. + C {d(1,5)+d(1,6)+...d(1,11)+d(1,12) + d(2,5) ... + d(2,12) + ..... + d(8,12) + d(13,17)+...}
-The constant C trades off the importance of semantic coherence of one session versus reducing conflict across parallel sessions.
-Our goal is to find a schedule with the maximum goodness.
+In our example, the goodness will be computed as<br />
+s(1,2) + s(1,3) + s(1,4) + s(2,3) + s(2,4) + s(3,4) + s(5,6) + s(5,7) + s(5,8) + s(6,7) + s(6,8) + s(7,8) + .. + C {d(1,5) + d(1,6) + ... d(1,11) + d(1,12) + d(2,5) ... + d(2,12) + ..... + d(8,12) + d(13,17)+...}
+The constant C trades off the importance of semantic coherence of one session versus reducing conflict across parallel sessions. **Our goal is to find a schedule with the maximum goodness.**
