@@ -5,7 +5,7 @@ The goal of this assignment is to learn the adversarial search algorithms (mini-
 
 ## The Game of Yinsh
 ### Setup
-![Yinsh Board](https://github.com/pradyatiitd/COL333/blob/master/Yinsh%20Game/img.jpg)
+![Yinsh Board](https://github.com/pradyatiitd/COL333/blob/master/Yinsh%20Game/img.jpg)<br />
 The game board is almost a regular hexagon of side N as shown. There are M rings with each player. Typical values for N are 5 and of M is also 5.
 ### Objective
 There are 2 players, Black and White. The objective for both the players is to remove L rings before the other player does. To remove a ring you must create K markers in a line (explained below).
