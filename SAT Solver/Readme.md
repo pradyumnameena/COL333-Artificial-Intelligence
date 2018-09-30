@@ -45,6 +45,7 @@ Supply a compile.sh script. Also supply two shell scripts run1.sh, run2.sh.
 <br>
 When we call “./run1.sh test”, you can assume that test.graph exists in the present working directory. When we call “./run2.sh test”, you can assume that test.graph, test.satinput and test.satoutput exist in the present working directory, along with any other temporary files created by “./run1.sh test”.<br>
 While we have not given an explicit time limit in the assignment, we may cut off your program if it takes an excruciatingly long amount of time, say more than an hour or so.<br>
+
 ## What is being provided?
 A problem generator for G and K where G does have K complete subgraphs is being provided. A check function that tests your output is also being provided. It does not check “unsatisfiable” output and only verifies if your solution provides K complete subgraphs. To run the generator use the command “python problemGenerator.py <number of vertices> <K>”, which will generate the input file "test.graph". To test your code use “python checker.py <input graph file> <output subgraphs file>”. It will only work for satisfiable cases.<br>
   
