@@ -7,8 +7,7 @@ You are an investigative agency working on uncovering the hidden connections bet
 1. All drug agencies are very close-knit: if two people are in the same agency they must have called
 each other.
 1. People don’t directly call anyone outside their agency.
-1. No agency is a strict subsidiary of another agency.
-<br>
+1. No agency is a strict subsidiary of another agency.<br>
 You abstract out the problem by creating an undirected graph G, where each node is a person and an edge between two nodes indicates that they had a phone conversation.
 
 ## Problem Statement
@@ -38,10 +37,10 @@ Each subgraph will be prefaced with a #i |Gi| indicating that it is the ith subg
 If the problem is unsatisfiable output a 0.<br><br>
 
 ## Code
-Please supply a compile.sh script. Also supply two shell scripts run1.sh, run2.sh.
+Supply a compile.sh script. Also supply two shell scripts run1.sh, run2.sh.
 * Executing the command “./run1.sh test” will take as input a file named test.graph and produce a file test.satinput – the input file for minisat. You can assume that test.graph exists in the present working directory.
 * Executing the command “./run2.sh test” will use the generated test.satoutput, test.graph (and any other temporary files produced by run1.sh) and produce a file test.subgraphs – subgraphs in the output format described above. You can assume that test.graph, test.satoutput (and other temp files) exist in the present working directory.
-* The TA will execute your scripts as follows: <br>
+* Script execution will be as followed: <br>
   1. ./run1.sh test
   1. ./minisat test.satinput test.satoutput 
   1. ./run2.sh test
@@ -49,9 +48,9 @@ Please supply a compile.sh script. Also supply two shell scripts run1.sh, run2.s
 When we call “./run1.sh test”, you can assume that test.graph exists in the present working directory. When we call “./run2.sh test”, you can assume that test.graph, test.satinput and test.satoutput exist in the present working directory, along with any other temporary files created by “./run1.sh test”.<br><br>
 While we have not given an explicit time limit in the assignment, we may cut off your program if it takes an excruciatingly long amount of time, say more than an hour or so.
 
+## What is being provided?
+A problem generator for G and K where G does have K complete subgraphs is being provided. A check function that tests your output is also being provided. It does not check “unsatisfiable” output and only verifies if your solution provides K complete subgraphs. To run the generator use the command “python problemGenerator.py <number of vertices> <K>”, which will generate the input file "test.graph". To test your code use “python checker.py <input graph file> <output subgraphs file>”. It will only work for satisfiable cases.
+ 
 ## Useful Resources
 1. [The MiniSat page](http://minisat.se/MiniSat.html)
 1. [MiniSat User Guide](https://dwheeler.com/essays/minisat-user-guide.html)
-<br><br>
-## What is being provided?
-A problem generator for G and K where G does have K complete subgraphs is being provided. A check function that tests your output is also being provided. It does not check “unsatisfiable” output and only verifies if your solution provides K complete subgraphs. To run the generator use the command “python problemGenerator.py <number of vertices> <K>”, which will generate the input file "test.graph". To test your code use “python checker.py <input graph file> <output subgraphs file>”. It will only work for satisfiable cases.
