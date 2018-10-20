@@ -34,7 +34,7 @@ After you solve the problem, the solution to BlackJack(4/13) should look very cl
 We provide an output checker, formatcheck.py, that tests whether your output is in the required format or not. To help students unfamiliar with shell scripting, we also provide a sample run.sh script that takes the input parameter from the command line and passes it to your own program (assuming your program is called BlackJackPlayer). Modify this file to replace “BlackJackPlayer” with the name of your executable.
 
 # Important information
-To familiarize yourself with the game, play it online for a few minutes. There are many online applets available, for example, this[http://www.hitorstand.net/game_m.html]. The rules they follow may be slight variations of those used in the assignment, but you will get the general idea.
+To familiarize yourself with the game, play it online for a few minutes. There are many online applets available, for example, [this](http://www.hitorstand.net/game_m.html). The rules they follow may be slight variations of those used in the assignment, but you will get the general idea.
 <br />
 <br />
 Please supply a compile.sh script and a run.sh script. We will run your code as follows: <br />
