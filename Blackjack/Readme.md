@@ -30,6 +30,13 @@ There are some slight variations on the rules and procedure of blackjack. Below 
 3. Splitting Aces- This is an exception to the rule. If the player gets a pair of aces that is a very strong hand. She can split this but she will only get one additional card per split hand, and she will not be allowed to resplit. Moreover, if the card is a face card, it will not be counted as blackjack, and will be treated as a regular 21.
 
 ## PayOffs (in this order)
+1. If the player has a blackjack then she receives 2.5 times her bet (profit of 1.5). The only exception is if the dealer also got a blackjack, which is a push (player gets money back – no profit no loss).<br />
+2. If the player busted, she lost her bet.<br />
+3. If the dealer busted, he lost and the dealer pays the player double her bet, i.e., the player makes a profit equal to her bet.<br />
+4. If the value of dealer's hand is greater than player's the player loses her bet.<br />
+5. If the value of player's hand is greater than dealer's the player won and dealer pays double her bet.<br />
+6. If the dealer has blackjack and the player has non-blackjack 21 the dealer wins.<br />
+7. If the value of the two hands is equal, it is a push and the player gets back her bet money. That is, no profit no loss.<br />
 
 # Problem Statement
 In this assignment your task is to compute the policy for an optimal player. As usual the first step is to carefully think of the state space that you will need. Design a state transition function, and reward model to encode the dynamics of the play. Solve the game to compute the best play in each state. The best play is defined as the action (hit/stand/double/split) that maximizes the expected return. Make sure you double or split only in the states it is allowed. <br /><br />Assume that the player bets $1. Program for a BlackJack(p) game. Assume that the probability of getting a face card is p (an input to the program) and the probability of getting all other cards, 2-9 and Ace, is uniformly (1-p)/9. Note that p = 4/13 captures the standard Blackjack game.<br /><br />
