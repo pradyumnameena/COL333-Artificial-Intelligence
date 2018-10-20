@@ -28,3 +28,13 @@ There are some slight variations on the rules and procedure of blackjack. Below 
 In this assignment your task is to compute the policy for an optimal player. As usual the first step is to carefully think of the state space that you will need. Design a state transition function, and reward model to encode the dynamics of the play. Solve the game to compute the best play in each state. The best play is defined as the action (hit/stand/double/split) that maximizes the expected return. Make sure you double or split only in the states it is allowed. <br /><br />Assume that the player bets $1. Program for a BlackJack(p) game. Assume that the probability of getting a face card is p (an input to the program) and the probability of getting all other cards, 2-9 and Ace, is uniformly (1-p)/9. Note that p = 4/13 captures the standard Blackjack game.<br /><br />
 After you solve the problem, the solution to BlackJack(4/13) should look very close to this. In the first column, representing your hand, a single integer represents the sum of the two cards, and indicates that they are not a pair and that neither is an ace. For the output of this assignment, you need to return only the first action that you will take. Thus your output need not distinguish between "D" and "DS".
 
+
+# What is being provided
+We provide an output checker, formatcheck.py, that tests whether your output is in the required format or not. To help students unfamiliar with shell scripting, we also provide a sample run.sh script that takes the input parameter from the command line and passes it to your own program (assuming your program is called BlackJackPlayer). Modify this file to replace “BlackJackPlayer” with the name of your executable.
+
+# Important information
+Please supply a compile.sh script and a run.sh script. We will run your code as follows: <br />
+./compile.sh<br />
+./run.sh 0.307<br />
+<br />
+The parameter in front of the ./run.sh will be the value p that represents the probability of the face card. When we call run.sh in the above format, it needs to save the policy to a file “Policy.txt” in the present working directory.
