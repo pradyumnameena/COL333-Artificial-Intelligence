@@ -25,6 +25,9 @@ A player is busted if the value of the hand has exceeded 21.
 There are some slight variations on the rules and procedure of blackjack. Below is the simplified procedure that we will use for this assignment. We will not be using insurance, surrender or dealer peeking, which are options in a standard casino game.
 
 ### Other Rules
+1. Doubling is allowed after split. That means, after splitting the pair, the player is allowed to double down either or both her hands if she wishes to.<br /><br />
+2. Player can resplit as many times as she desires (whenever allowed).<br /><br />
+3. Splitting Aces- This is an exception to the rule. If the player gets a pair of aces that is a very strong hand. She can split this but she will only get one additional card per split hand, and she will not be allowed to resplit. Moreover, if the card is a face card, it will not be counted as blackjack, and will be treated as a regular 21.
 
 ## PayOffs (in this order)
 
