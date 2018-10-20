@@ -26,7 +26,7 @@ There are some slight variations on the rules and procedure of blackjack. Below 
 1. Each player places a bet on the hand.<br />
 2. The dealer deals two cards to each player, including himself. The player's cards will be face-up. One of the dealers cards is face-up, but the other is face-down.<br />
 3. The player must do one of the following:<br />
-  1. Hit
+  * Hit
 4. Once the player stands, the dealer turns over his face-down card. The dealer then hits or stands according to the following deterministic policy: If the value of the hand is less than 17 (or soft 17), the dealer must hit. Otherwise, the dealer must stand. This means, that the dealer stands if his Cards are (A,2,4) because that makes a soft 17. If the dealer busts, then he loses the bets with the non-busted players.<br />
 
 ### Other Rules
