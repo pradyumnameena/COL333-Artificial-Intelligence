@@ -29,41 +29,7 @@ In this assignment your task is to compute the policy for an optimal player. As 
 After you solve the problem, the solution to BlackJack(4/13) should look very close to this. In the first column, representing your hand, a single integer represents the sum of the two cards, and indicates that they are not a pair and that neither is an ace. For the output of this assignment, you need to return only the first action that you will take. Thus your output need not distinguish between "D" and "DS".
 
 # Output Format
-The output format is very close to the policy in the link. The first value in a row is your hand – it goes from 5 to 19. Then we have special cases, first when one of the cards is an ace, A2 to A9 and finally pairs, 22 to 1010. After your hand there is a tab ‘\t’ and then there are 10 values for different open cards of the dealer (2 to 10 then ace). The letter will indicate your first action if you get this hand. Here is a sample output: <br /><br />
-5 H H HH H H H H H H<br />
-6 H H HH H H H H H H<br />
-7 H H HH H H H H H H<br />
-8 H H HH H H H H H H<br />
-9 H D DD D H H H H H<br />
-10 D D D D D D D D HH<br />
-11 D D D D D D D D HH<br />
-12 H H S S SH H H H H<br />
-13 S S S S SH H H H H<br />
-14 S S S S SH H H H H<br />
-15 S S S S SH H H H H<br />
-16 S S S S SH H H H H<br />
-17 S S S S SSS SSS<br />
-18 S S S S SSS SSS<br />
-19 S S S S SSS SSS<br />
-A2 H H HH D H H H<br />
-A3 H H HD D H H H<br />
-A4 H H HD D H H H<br />
-A5 H HD D D H H H<br />
-A6 H D DD D H H H<br />
-A7 S D D D D SS H H H<br />
-A8 S S S S SSS SSS<br />
-A9 S S S S SSS SSS<br />
-22 PPP PPPH H H H<br /> 
-33 PPP PPPH H H H<br />
-H H H H H H H H H H<br />
-44 H H H P P H H HH H<br /> 
-55 D D D D D D D D HH<br /> 
-66 PPP PPH H H H H<br /> 
-77 PPP PPPH H H H <br />
-88 PPP PPPP PH H <br />
-99 P P P P P SP P SS <br />
-1010 S S S S S S S S S S<br />
-AA P P P P P P P P P H<br /><br />
+The output format is very close to the policy in the link. The first value in a row is your hand – it goes from 5 to 19. Then we have special cases, first when one of the cards is an ace, A2 to A9 and finally pairs, 22 to 1010. After your hand there is a tab ‘\t’ and then there are 10 values for different open cards of the dealer (2 to 10 then ace). The letter will indicate your first action if you get this hand. [Here](https://www.google.co.in) is a sample output.
 
 # What is being provided
 We provide an output checker, formatcheck.py, that tests whether your output is in the required format or not. To help students unfamiliar with shell scripting, we also provide a sample run.sh script that takes the input parameter from the command line and passes it to your own program (assuming your program is called BlackJackPlayer). Modify this file to replace “BlackJackPlayer” with the name of your executable.
